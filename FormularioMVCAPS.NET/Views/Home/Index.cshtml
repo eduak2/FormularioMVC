@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<head>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Registro de información</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="alert alert-success" role="alert">
+            Información introducida correctamente.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Ocurrió un error al introducir la información, por favor valide.
+        </div>
+    </div>
+    <!-- Row start -->
+    <div class="row">
+        <div >
+            <div class="panel panel-default">
+                <div class="panel-heading clearfix">
+                    <i class="icon-calendar"></i>
+                    <h3 class="panel-title">Datos personales</h3>
+                </div>
+
+                <form class="form-horizontal row-border " id="fm-People">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Nombre</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="txt-name" name="Nombre" placeholder="Nombre" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Apellido</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="txt-lastName" name="Apellido" placeholder="Apellido" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">No Documento</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="txt-DocumentNumber" name="No Documento" placeholder="No Documento" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Fecha de nacimiento</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="date" id="txt-BirthDate" name="BirthDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">E-mail</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="txt-Email" name="E-mail" placeholder="E-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Profeción</label>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="txt-Profetion" name="Profeción" placeholder="Profeción" required>
+                        </div>
+                    </div>
+                    <button type="button" id="btn-SendForm" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="myGrid" style="height: 600px;width:100%;" class="ag-theme-balham"></div>
+    </div>
+
+</div>
+<!-- Row end -->

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularioMVCAPS.NET", "FormularioMVCAPS.NET\FormularioMVCAPS.NET.csproj", "{A812B45B-A8C0-42F0-80A9-CE03C3352E4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A812B45B-A8C0-42F0-80A9-CE03C3352E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A812B45B-A8C0-42F0-80A9-CE03C3352E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A812B45B-A8C0-42F0-80A9-CE03C3352E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A812B45B-A8C0-42F0-80A9-CE03C3352E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E41775C-A98E-4DB1-BF2D-A71CF0BC0345}
+	EndGlobalSection
+EndGlobal
