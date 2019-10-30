@@ -9,6 +9,8 @@ namespace FormularioMVCAPS.NET.Controllers
 {
     public class HomeController : Controller
     {
+        List<Persona> modelPerson = null;
+
         public ActionResult Index()
         {
             return View();
@@ -16,15 +18,16 @@ namespace FormularioMVCAPS.NET.Controllers
 
 
         [HttpPost]
-        public string SavePerson(Persona persona) {
+        public string SavePerson(Persona persona)
+        {
             try
             {
-                var modelPerson = new List<Persona>();
                 modelPerson.Add(persona);
 
-                return JsonConvert.SerializeObject(modelPerson); 
+                return JsonConvert.SerializeObject(modelPerson);
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 throw new Exception(e.Message);
             }
 
